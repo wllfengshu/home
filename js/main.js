@@ -62,9 +62,9 @@ window.addEventListener('load', function () {
     }, 800);
 
     //延迟加载音乐播放器
-    let element = document.createElement("script");
-    element.src = "./js/music.js";
-    document.body.appendChild(element);
+    // let element = document.createElement("script");
+    // element.src = "./js/music.js";
+    // document.body.appendChild(element);
 
     //中文字体缓加载-此处写入字体源文件 （暂时弃用）
     //先行加载简体中文子集，后续补全字集
@@ -136,9 +136,9 @@ $('#hitokoto').click(function () {
 //获取天气
 //请前往 https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
 //请前往 https://dev.qweather.com/ 申请 key
-const add_id = "wrknltonr0foslhs"; // app_id
-const app_secret = "Nlh1c0F6d0ZDU2pDR0J3YVBVbkhudz09"; // app_secret
-const key = "433f0c48615a48dfaf2f2b2444297e79" // key
+const add_id = "lcsmfhqetiawrli0"; // app_id
+const app_secret = "OU9tUEVLOVRtSGkydy84MUVQM3V0dz09"; // app_secret
+const key = "597e9db44a4948369f10f6e3b7d948ab" // key
 function getWeather() {
     fetch("https://www.mxnzp.com/api/ip/self?app_id=" + add_id + "&app_secret=" + app_secret)
         .then(response => response.json())
@@ -390,33 +390,20 @@ document.oncontextmenu = function () {
 
 //控制台输出
 //console.clear();
-let styleTitle1 = `
-font-size: 20px;
-font-weight: 600;
-color: rgb(244,167,89);
-`
-let styleTitle2 = `
-font-size:12px;
-color: rgb(244,167,89);
-`
-let styleContent = `
-color: rgb(30,152,255);
-`
-let title1 = '無名の主页'
-let title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ / 
-  | | | |\\/| |\\___ \\  \\   /    \\   /  
- _| |_| |  | |____) |  | |      | |   
-|_____|_|  |_|_____/   |_|      |_|                                                     
-`
-let content = `
-版 本 号：3.4
-更新日期：2022-07-24
-
-主页:  https://www.imsyy.top
-Github:  https://github.com/imsyy/home
-`
-console.log(`%c${title1} %c${title2}
-%c${content}`, styleTitle1, styleTitle2, styleContent)
+// let styleTitle1 = `
+// font-size: 20px;
+// font-weight: 600;
+// color: rgb(244,167,89);
+// `
+// let styleTitle2 = `
+// font-size:12px;
+// color: rgb(244,167,89);
+// `
+// let styleContent = `
+// color: rgb(30,152,255);
+// `
+// let title1 = ''
+// let title2 = ''
+// let content = ''
+// console.log(`%c${title1} %c${title2}
+// %c${content}`, styleTitle1, styleTitle2, styleContent)
